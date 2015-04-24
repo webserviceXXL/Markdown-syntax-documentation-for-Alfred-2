@@ -7,7 +7,7 @@ Type `md [keyword]` (or set your own shortcut) to search with the documentation.
 
 ## Install
 
-Clone this repo and double-click the `alfred-terminal-commands.workflow` file or download [just the workflow file](https://github.com/gnestor/alfred-terminal-commands/raw/master/package/alfred-terminal-commands.alfredworkflow).
+Clone this repo and double-click the `markdown-syntax-documentation.alfredworkflow` file or download [just the workflow file](https://github.com/webserviceXXL/Markdown-syntax-documentation-for-Alfred-2/blob/master/package/alfred-terminal-commands.alfredworkflow).
 
 ## Screenshots
 
