@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.webservicexxl.alfred-markdown-syntax-doc</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>Heiko Vogelgesang</string>
+	<key>description</key>
+	<string>Search OS X terminal commands</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Markdown syntax documentation</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>cmd</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading results...</string>
+				<key>script</key>
+				<string>ruby script.rb "{query}"</string>
+				<key>title</key>
+				<string>Search terminal commands</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>48F47C79-01A7-4C1D-8239-1DAF1D54F7E6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>2404AE08-D4CF-4265-B7BB-44043DD356DD</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Search Markdown syntax using Alfred 2
+
+Use this workflow to search Markdown syntax by keyword and paste the syntax into any app.
+
+## Usage
+Type `md [keyword]` (or set your own shortcut) to search with the documentation. Press `ENTER` to copy the syntax to the clipboard and paste it in the front-most app.
+
+## Install
+
+Clone this repo and double-click the `alfred-terminal-commands.workflow` file or download [just the workflow file](https://github.com/gnestor/alfred-terminal-commands/raw/master/package/alfred-terminal-commands.alfredworkflow).</string>
+	<key>uidata</key>
+	<dict>
+		<key>2404AE08-D4CF-4265-B7BB-44043DD356DD</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+		<key>48F47C79-01A7-4C1D-8239-1DAF1D54F7E6</key>
+		<dict>
+			<key>ypos</key>
+			<real>70</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/webserviceXXL/Markdown-syntax-documentation-for-Alfred-2</string>
+</dict>
+</plist>
