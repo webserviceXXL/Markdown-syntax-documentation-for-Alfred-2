@@ -7,7 +7,30 @@
 	<key>category</key>
 	<string>Productivity</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>48F47C79-01A7-4C1D-8239-1DAF1D54F7E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2404AE08-D4CF-4265-B7BB-44043DD356DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>70C5E57B-786C-4844-9A6D-3C529337C8C7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1031EB3A-435C-4394-BC2D-90483FDD995B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Heiko Vogelgesang</string>
 	<key>description</key>
@@ -68,6 +91,40 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>mde</string>
+				<key>text</key>
+				<string>Edit Markdwon Syntax Documentation</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>70C5E57B-786C-4844-9A6D-3C529337C8C7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/Sublime Text.app</string>
+				<key>sourcefile</key>
+				<string>~/Library/Application Support/Alfred 2/Alfred.alfredpreferences/workflows/user.workflow.90ECE468-E96E-4A68-B684-5F8514439218/commands.rb</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>1031EB3A-435C-4394-BC2D-90483FDD995B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># Search Markdown syntax using Alfred 2
@@ -82,6 +139,11 @@ Type `md [keyword]` (or set your own shortcut) to search with the documentation.
 Clone this repo and double-click the `alfred-terminal-commands.workflow` file or download [just the workflow file](https://github.com/gnestor/alfred-terminal-commands/raw/master/package/alfred-terminal-commands.alfredworkflow).</string>
 	<key>uidata</key>
 	<dict>
+		<key>1031EB3A-435C-4394-BC2D-90483FDD995B</key>
+		<dict>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
 		<key>2404AE08-D4CF-4265-B7BB-44043DD356DD</key>
 		<dict>
 			<key>ypos</key>
@@ -91,6 +153,11 @@ Clone this repo and double-click the `alfred-terminal-commands.workflow` file or
 		<dict>
 			<key>ypos</key>
 			<real>70</real>
+		</dict>
+		<key>70C5E57B-786C-4844-9A6D-3C529337C8C7</key>
+		<dict>
+			<key>ypos</key>
+			<real>190</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>

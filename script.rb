@@ -1,3 +1,4 @@
+require './htmlentities'
 require './commands'
 # require './related_words'
 
@@ -14,19 +15,16 @@ def match?(word, query)
   word.match(/#{query}/i)
 end
 
-query = Regexp.escape(ARGV.first).delete('>')
+query = Regexp.escape(HTMLEntities.new.decode(ARGV.first))
 
 # matches = RELATED_WORDS.select { |k, v| match?(k, query) || v.any? { |r| match?(r, query) } }
 matches = COMMANDS.select { |k, v| match?(k, query) || match?(v, query) }
 
-# 1.8.7 returns a [['key', 'value']] instead of a Hash.
-# matches = matches.respond_to?(:keys) ? matches.keys : matches.map(&:first)
-
 items = matches.sort.map do |key, value|
-  title = "#{value}: #{key}"
+  title = "#{key}: #{value}"
   arg = ARGV.size > 1 ? COMMANDS.fetch(key, command) : value
-  item_xml({ :arg => arg, :uid => value, :title => title,
-             :subtitle => "Copy #{arg} to clipboard" })
+  #item_xml({ :arg => arg, :uid => value, :title => title, :subtitle => "Copy #{arg} to clipboard" })
+  item_xml({ :arg => arg, :uid => value, :title => title, :subtitle => value })
 end.join
 
 output = "<?xml version='1.0'?>\n<items>\n#{items}</items>"
